@@ -36,12 +36,12 @@ jobs:
 
       - name: Prepare GitHub Pages
         run: |
-          touch ./.output/public/.nojekyll
+          touch ./dist/client/.nojekyll
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./.output/public
+          path: ./dist/client
 
   deploy:
     environment:
