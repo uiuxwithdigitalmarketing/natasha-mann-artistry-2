@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 
-import logo from "@/assets/nm-logo-white.png.asset.json";
+import logo from "@/assets/nm-logo-white.png";
 import { business } from "@/content/site";
 import { cn } from "@/lib/utils";
 
@@ -13,7 +13,7 @@ export function Logo({ className }: { className?: string }) {
       className={cn("group inline-flex items-center gap-3.5", className)}
     >
       <img
-        src={logo.url}
+        src={logo}
         alt=""
         aria-hidden="true"
         width={711}
@@ -36,7 +36,7 @@ export function Logo({ className }: { className?: string }) {
 export function LogoMark({ className }: { className?: string }) {
   return (
     <img
-      src={logo.url}
+      src={logo}
       alt="Natasha Mann Artistry logo — N|M monogram with the tagline Timeless Beauty. Every Occasion."
       width={711}
       height={752}
